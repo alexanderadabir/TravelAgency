@@ -170,9 +170,9 @@
       text-align: center;
       gap: 0;
       &::before {
-        top: -7%;
+        top: -6%;
         content: "Travel";
-        font-size: 8rem;
+        font-size: 7rem;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -208,7 +208,6 @@
   .about {
     &__inner {
       &::before {
-        top: -6%;
         content: "Travel";
         font-size: 5rem;
         left: 50%;
