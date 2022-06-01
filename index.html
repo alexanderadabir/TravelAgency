@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore</title>
+    <link rel="icon" type="image/svg" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/7f5bf06dc3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <p class="header__logo logo">Explore</p>
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Tours</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Hotel</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Gallery</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Pages</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Blog</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__auth auth">
+            <a class="auth__link" href="#">Login</a>
+            <a class="auth__link btn" href="#">Sign <span>up</span></a>
+          </div>
+
+          <button class="burger">
+            <i class="fa-solid fa-bars"></i>
+            <div class="burger__inner">
+              <p class="burger__logo logo">Explore</p>
+              <ul class="burger__list">
+                <li class="burger__item">
+                  <a class="burger__link" href="#">Home</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#">Tours</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#">Hotel</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#">Gallery</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#">Pages</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#">Blog</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#">Contact</a>
+                </li>
+              </ul>
+              <div class="auth">
+                <a class="auth__link" href="#">Login</a>
+                <a class="auth__link btn" href="#">Sign <span>up</span></a>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <h1 class="intro__title title">
+              It&rsquo;s a&nbsp;Big World Out There, Go Explore
+            </h1>
+            <p class="intro__text text">
+              Conveniently customize proactive web services for leveraged
+              without continualliery aggregate fricctionle ou&nbsp;wellies
+              richard. and very customize continually.
+            </p>
+            <div class="intro__group-links">
+              <a class="intro__link btn" href="#">Get Exploration</a>
+              <a class="intro__link btn" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <form class="booking-tab" action="get">
+        <div class="container">
+          <div class="booking-tab__inner">
+            <ul class="booking-tab__nav">
+              <li class="booking-tab__item">
+                <button
+                  id="Hotel"
+                  class="booking-tab__btn booking-tab__btn--active"
+                >
+                  <img
+                    class="booking-tab__icon"
+                    src="assets/img/hotel.svg"
+                    alt=""
+                  />
+                  Hotel
+                </button>
+              </li>
+              <li class="booking-tab__item">
+                <button id="Flight" class="booking-tab__btn">
+                  <img
+                    class="booking-tab__icon"
+                    src="assets/img/flight.svg"
+                    alt=""
+                  />
+                  Flight
+                </button>
+              </li>
+              <li class="booking-tab__item">
+                <button id="Car" class="booking-tab__btn">
+                  <img
+                    class="booking-tab__icon"
+                    src="assets/img/car.svg"
+                    alt=""
+                  />
+                  Car
+                </button>
+              </li>
+              <li class="booking-tab__item">
+                <button id="Ship" class="booking-tab__btn">
+                  <img
+                    class="booking-tab__icon"
+                    src="assets/img/ship.svg"
+                    alt=""
+                  />
+                  Ship
+                </button>
+              </li>
+            </ul>
+            <div class="booking-tab__content">
+              <ul class="booking-tab__list">
+                <li class="booking-tab__item">
+                  <p class="booking-tab__text">Your Destination</p>
+                  <select class="booking-tab__input">
+                    <option class="booking-tab__option">Russia</option>
+                    <option class="booking-tab__option">Andorra</option>
+                    <option class="booking-tab__option">Brazil</option>
+                    <option class="booking-tab__option">China</option>
+                    <option class="booking-tab__option">Egypt</option>
+                    <option class="booking-tab__option">Germany</option>
+                  </select>
+                </li>
+                <li class="booking-tab__item">
+                  <p class="booking-tab__text">Check In</p>
+                  <input class="booking-tab__input" type="date" />
+                </li>
+                <li class="booking-tab__item">
+                  <p class="booking-tab__text">Check Out</p>
+                  <input class="booking-tab__input" type="date" />
+                </li>
+                <li class="booking-tab__item">
+                  <p class="booking-tab__text">Child</p>
+                  <input
+                    class="booking-tab__input"
+                    type="text"
+                    placeholder="2"
+                  />
+                </li>
+                <li class="booking-tab__item">
+                  <p class="booking-tab__text">Adult</p>
+                  <input
+                    class="booking-tab__input"
+                    type="text"
+                    placeholder="3"
+                  />
+                </li>
+                <li class="booking-tab__item">
+                  <button class="booking-tab__submit btn" type="submit">
+                    Book Now
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__left">
+              <img
+                class="about__img"
+                src="assets/img/about1.png"
+                alt="About us"
+                width="577"
+                height="579"
+              />
+            </div>
+            <div class="about__right">
+              <h2 class="about__title">About&nbsp;us</h2>
+              <p class="about__slogan">
+                World Best Travel Agency Company Since 2008.
+              </p>
+              <p class="about__text text">
+                Continually productize compelling quality for packed with elated
+                productize compelling quality for packed in&nbsp;with all elated
+                Them Setting up&nbsp;to&nbsp;website and creating pages.
+              </p>
+              <ul class="about__list">
+                <li class="about__item">
+                  <i class="fa-regular fa-square-check"></i>
+                  We&nbsp;providing compe quality for packed with elated
+                  different.
+                </li>
+                <li class="about__item">
+                  <i class="fa-regular fa-square-check"></i>
+                  We&nbsp;are one of&nbsp;compelling quality for packed with
+                  leading.
+                </li>
+                <li class="about__item">
+                  <i class="fa-regular fa-square-check"></i>
+                  Learn how compelling quality for packed with elated grow.
+                </li>
+              </ul>
+
+              <ul class="about__stat">
+                <li class="about__stat-item">
+                  <div class="about__stat-num">20+</div>
+                  <p class="about__stat-text">Year Experience</p>
+                </li>
+                <li class="about__stat-item">
+                  <div class="about__stat-num">250+</div>
+                  <p class="about__stat-text">Destination Collaboratin</p>
+                </li>
+                <li class="about__stat-item">
+                  <div class="about__stat-num">170K+</div>
+                  <p class="about__stat-text">Happy Customers</p>
+                </li>
+              </ul>
+
+              <a class="about__btn btn" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
