@@ -183,14 +183,12 @@ img {
   }
 
   &__group-links {
-    font-size: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    gap: 20px;
   }
 
   &__link {
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-
     &:nth-child(2) {
       background-color: $white-color;
 

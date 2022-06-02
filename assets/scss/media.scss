@@ -10,19 +10,9 @@
 
 @media (max-width: 1024px) {
   .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
     &__inner {
       display: flex;
       flex-direction: column;
-      padding-top: 17px;
-      min-height: 56px;
-
-      width: 100%;
-
       font-weight: 600;
     }
 
@@ -47,7 +37,6 @@
 
     &__submit {
       max-width: 100%;
-      margin-top: 20px;
     }
   }
   .about {
@@ -58,14 +47,8 @@
     }
     &__inner {
       &::before {
-        content: "Travel";
         font-size: 20rem;
-        line-height: 0.7;
       }
-    }
-
-    &__stat {
-      justify-content: space-around;
     }
 
     &__left {
@@ -78,10 +61,17 @@
 
 @media (max-width: 768px) {
   .intro {
-    text-align: center;
+    &__inner {
+      text-align: center;
+    }
+
     &__title {
       max-width: 100%;
       margin-bottom: 17px;
+    }
+
+    &__group-links {
+      justify-content: center;
     }
 
     &__text {
@@ -101,25 +91,13 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      gap: 0;
+      gap: 40px;
       &::before {
         top: -10%;
-        content: "Travel";
         font-size: 15rem;
         left: 50%;
         transform: translateX(-50%);
       }
-    }
-    &__left {
-      width: 100%;
-      margin-bottom: 3em;
-      & img {
-        height: auto;
-      }
-    }
-
-    &__right {
-      max-width: 100%;
     }
   }
 
@@ -165,22 +143,14 @@
 
   .about {
     &__inner {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 0;
       &::before {
         top: -6%;
-        content: "Travel";
         font-size: 7rem;
-        left: 50%;
-        transform: translateX(-50%);
       }
     }
 
     &__stat {
       flex-direction: column;
-      align-items: center;
       gap: 20px;
 
       &-item {
@@ -190,7 +160,6 @@
   }
   .booking-tab {
     &__nav {
-      max-width: 100%;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -205,25 +174,17 @@
   .about {
     &__inner {
       &::before {
-        content: "Travel";
         font-size: 5rem;
-        left: 50%;
-        transform: translateX(-50%);
       }
     }
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 374.99px) {
   .intro {
-    &.intro__group-links {
-      flex-direction: column;
-    }
-    &__link {
-      &:not(:last-child) {
-        margin: 0;
-        margin-bottom: 10px;
-      }
+    &__group-links {
+      grid-template-columns: repeat(1, 160px);
+      gap: 10px;
     }
   }
 }
